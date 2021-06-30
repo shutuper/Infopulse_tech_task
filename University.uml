@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Diagram>
+  <ID>JAVA</ID>
+  <OriginalElement>Task_3</OriginalElement>
+  <nodes>
+    <node x="-172.91738902679916" y="1084.0">Task_3.Faculty</node>
+    <node x="-282.6576980568011" y="872.0">Task_3.Cathedra</node>
+    <node x="223.01078368567136" y="558.0">Task_3.Curator</node>
+    <node x="-7.434831883052254" y="558.0">Task_3.Student</node>
+    <node x="239.40038270072603" y="356.2107623318386">Task_3.Subject</node>
+    <node x="-282.6576980568011" y="558.0">Task_3.Teacher</node>
+    <node x="60.7080252598048" y="824.0000000000001">Task_3.Group</node>
+    <node x="-101.01046337817627" y="284.21076233183857">Task_3.Person</node>
+    <node x="157.40038270072603" y="1084.0">Task_3.University</node>
+  </nodes>
+  <notes />
+  <edges>
+    <edge source="Task_3.Teacher" target="Task_3.Cathedra" relationship="TO_ONE">
+      <point x="0.0" y="91.0" />
+      <point x="-21.5" y="-79.0" />
+    </edge>
+    <edge source="Task_3.Curator" target="Task_3.Group" relationship="DEPENDENCY">
+      <point x="45.0" y="67.0" />
+      <point x="137.30275842586656" y="-103.0" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Curator" relationship="DEPENDENCY">
+      <point x="107.30275842586656" y="-103.0" />
+      <point x="15.0" y="67.0" />
+    </edge>
+    <edge source="Task_3.University" target="Task_3.Subject" relationship="DEPENDENCY">
+      <point x="132.110617299274" y="-67.0" />
+      <point x="427.511" y="537.0" />
+      <point x="336.4" y="537.0" />
+      <point x="-3.8270072604973393E-4" y="79.00023766816139" />
+    </edge>
+    <edge source="Task_3.Cathedra" target="Task_3.Teacher" relationship="TO_MANY">
+      <point x="-36.50030194319888" y="-79.0" />
+      <point x="-15.000301943198878" y="91.0" />
+    </edge>
+    <edge source="Task_3.Teacher" target="Task_3.Cathedra" relationship="DEPENDENCY">
+      <point x="-30.000301943198878" y="91.0" />
+      <point x="-51.50030194319888" y="-79.0" />
+    </edge>
+    <edge source="Task_3.Cathedra" target="Task_3.Teacher" relationship="DEPENDENCY">
+      <point x="0.0" y="-79.0" />
+      <point x="21.5" y="91.0" />
+    </edge>
+    <edge source="Task_3.Teacher" target="Task_3.Subject" relationship="TO_MANY">
+      <point x="-15.0" y="-91.0" />
+      <point x="-185.1576980568011" y="266.71076233183857" />
+      <point x="321.400382700726" y="266.71076233183857" />
+      <point x="-15.0" y="-79.0" />
+    </edge>
+    <edge source="Task_3.Teacher" target="Task_3.Person" relationship="GENERALIZATION">
+      <point x="105.0" y="-91.0" />
+      <point x="-69.64723467862484" y="115.00000000000006" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Student" relationship="DEPENDENCY">
+      <point x="-140.14285714285705" y="-103.0" />
+      <point x="0.0" y="91.0" />
+    </edge>
+    <edge source="Task_3.Student" target="Task_3.Group" relationship="DEPENDENCY">
+      <point x="-15.0" y="91.0" />
+      <point x="-155.14285714285705" y="-103.0" />
+    </edge>
+    <edge source="Task_3.Teacher" target="Task_3.Subject" relationship="DEPENDENCY">
+      <point x="0.0" y="-91.0" />
+      <point x="-170.1576980568011" y="536.1053811659192" />
+      <point x="336.400382700726" y="536.1053811659192" />
+      <point x="0.0" y="-79.0" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Curator" relationship="TO_ONE">
+      <point x="122.30275842586656" y="-103.0" />
+      <point x="30.0" y="67.0" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Student" relationship="TO_MANY">
+      <point x="-125.14285714285705" y="-103.0" />
+      <point x="15.0" y="91.0" />
+    </edge>
+    <edge source="Task_3.Cathedra" target="Task_3.Group" relationship="TO_MANY">
+      <point x="134.0" y="15.0" />
+      <point x="-163.5" y="38.999999999999886" />
+    </edge>
+    <edge source="Task_3.Cathedra" target="Task_3.Group" relationship="DEPENDENCY">
+      <point x="134.0" y="0.0" />
+      <point x="-163.5" y="23.999999999999886" />
+    </edge>
+    <edge source="Task_3.Curator" target="Task_3.Teacher" relationship="GENERALIZATION">
+      <point x="0.0" y="67.0" />
+      <point x="316.51078368567136" y="799.1053811659193" />
+      <point x="-133.6576980568011" y="799.1053811659193" />
+      <point x="36.5" y="91.0" />
+    </edge>
+    <edge source="Task_3.Faculty" target="Task_3.Cathedra" relationship="DEPENDENCY">
+      <point x="-72.74030903000195" y="-67.0" />
+      <point x="0.0" y="79.0" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Subject" relationship="DEPENDENCY">
+      <point x="-18.697241574133443" y="-103.0" />
+      <point x="205.51078368567136" y="435.2107623318386" />
+      <point x="-97.0" y="0.0" />
+    </edge>
+    <edge source="Task_3.University" target="Task_3.Faculty" relationship="TO_MANY">
+      <point x="-138.0" y="0.0" />
+      <point x="97.0" y="0.0" />
+    </edge>
+    <edge source="Task_3.Faculty" target="Task_3.Cathedra" relationship="TO_MANY">
+      <point x="0.0" y="-67.0" />
+      <point x="72.74030903000195" y="79.0" />
+    </edge>
+    <edge source="Task_3.University" target="Task_3.Faculty" relationship="DEPENDENCY">
+      <point x="-138.0" y="15.0" />
+      <point x="97.0" y="15.0" />
+    </edge>
+    <edge source="Task_3.Group" target="Task_3.Subject" relationship="TO_MANY">
+      <point x="163.5" y="14.999999999999886" />
+      <point x="459.700191350363" y="942.0" />
+      <point x="459.700191350363" y="405.211" />
+      <point x="97.0" y="-29.99976233183861" />
+    </edge>
+    <edge source="Task_3.University" target="Task_3.Subject" relationship="TO_MANY">
+      <point x="138.0" y="0.0" />
+      <point x="501.0" y="1151.0" />
+      <point x="501.0" y="390.211" />
+      <point x="97.0" y="-44.99976233183861" />
+    </edge>
+    <edge source="Task_3.Student" target="Task_3.Person" relationship="GENERALIZATION">
+      <point x="-79.57563149512401" y="-91.0" />
+      <point x="0.0" y="115.00000000000006" />
+    </edge>
+  </edges>
+  <settings layout="Hierarchic" zoom="0.6882716049382716" showDependencies="true" x="109.5" y="742.0" />
+  <SelectedNodes />
+  <Categories>
+    <Category>Constructors</Category>
+    <Category>Fields</Category>
+    <Category>Inner Classes</Category>
+    <Category>Methods</Category>
+    <Category>Properties</Category>
+  </Categories>
+  <SCOPE>All</SCOPE>
+  <VISIBILITY>private</VISIBILITY>
+</Diagram>
+

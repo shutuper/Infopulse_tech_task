@@ -1,0 +1,9 @@
+// first task:
+
+select account_id, cust_id, avail_balance from account where (status = 'ACTIVE' AND avail_balance > 1000);
+
+========================================================================================================================
+// second task:
+
+select res.account_id, res.fed_id, res.name from (customer c
+         left join (account a left join product p on a.product_cd = p.product_cd) ap on c.cust_id = ap.cust_id) res;
